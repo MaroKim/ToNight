@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id = "wrap">
+      <div id ="nav">
+        <div id ="logo_img">
+          <img alt="logo_img"/>
+        </div>
+        000 님
+        <div id ="user_img">
+          <img alt="user_img"/>
+        </div>
+    	</div>
+      <br/><hr/><br/>
+    	<div id ="slide">
+    		000님
+    		<a  href ="/logout">logout</a>
+    		<div id ="qr_code">	<a  href ="/QR">QR</a></div>
+    		<div id = "exit"> <a  href ="/exit">퇴장하기</a> </div>
+    		<div id = "charge"> <a  href ="/charge">충전하기</a> </div>
+    		<div id = "history"> <a  href ="/history">기록보기</a> </div>
+    	</div>
+      <br/><hr/><br/>
+    	<div ="content">
+        <div id ="current_money">
+          000,000,000 won
+        </div>
+        <hr/>
+        <div id ="charge">
+          <form id ="charge" action="/charge" method ="post">
+            <div id ="money_select">
+              <input type ="number" name ="money"/><br/>
+              <input type ="button" value ="5만원"/>
+              <input type ="button" value ="만원"/>
+              <input type ="button" value ="천원"/>
+            </div>
+            <div id ="password">
+               password를 입력해 주세요 <br/>
+              <input type = "password" name ="password"></br>
+              <input type = "submit" >
+            </div>
+          </form>
+        </div>
+    	</div>
+    </div>
+  </body>
+</html>
