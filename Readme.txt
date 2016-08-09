@@ -52,7 +52,11 @@
 |  : remote명에 저장된 URL주소로 해당 경로에 commit된 파일 또는 디렉토리를 업로드한다	   |
 |											   |
 |											   |	|   $git remote pull <remote명> <branch 명>						   | |  : remote명에 저장된 URL주소로부터 파일과 디렉토리를 다운로드 한다			   |
+|  											   |
 +------------------------------------------------------------------------------------------+
+
+Reference
+http://dimdim.tistory.com/entry/GIT%EC%97%90-%EB%8C%80%ED%95%9C-%EB%82%B4%EC%9A%A9%EC%A0%95%EB%A6%AC-%EC%A0%95%EB%A6%AC%EC%A4%91
 
 
 
