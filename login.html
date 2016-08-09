@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id = "wrap">
+    	<div id ="main_img">
+    		<img alt="main_img"/>
+    	</div>
+    	<div id ="login_form">
+    		<form id ="login" action="/login" method ="post">
+    			<input type = "text" id ="id" name = "id" placeholder="아이디"/><br/>
+    			<input type = "password" id="pw" name = "pw" placeholder ="비밀번호" /><br/>
+    			<input type = "submit" value="로그인"/>
+    			<a  href ="/joinform">Join us</a>
+    		</form>
+    	</div>
+      <br/><br/>
+    	<div id ="join_form">
+    		<form id ="join" action ="/join" method ="post">
+    			<input type = "text" id ="id" name ="id" placeholder ="아이디"/><br/>
+    			<input type = "password" id  ="pw" name = "pw" placeholder ="비밀번호"/><br/>
+    			<input type = "password" paceholder ="비밀번호 확인"/><br/>
+    			<input type = "radio" name = "gender" value = "남자">남자
+          <input type = "radio" name = "gender" value = "여자">여자<br/>
+    			<input type = "number" id ="phone1" name ="phone1" />-
+          <input type = "number" id ="phone2" name ="phone2" />-
+          <input type = "number" id ="phone3" name ="phone3" /><br/>
+    			<input type ="submit" value ="회원가입"/>
+    			<a href ="/loginform" >Log in</a>
+    		</form>
+    	</div>
+    </div>
+  </body>
+</html>
