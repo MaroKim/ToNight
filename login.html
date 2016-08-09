@@ -9,22 +9,24 @@
     	<div id ="main_img">
     		<img alt="main_img"/>
     	</div>
+      <!-- 로그인 폼 -->
     	<div id ="login_form">
     		<form id ="login" action="/login" method ="post">
-    			<input type = "text" id ="id" name = "id" placeholder="아이디"/><br/>
-    			<input type = "password" id="pw" name = "pw" placeholder ="비밀번호" /><br/>
+    			<input type = "text" id ="login_id" name = "login_id" placeholder="아이디"/><br/>
+    			<input type = "password" id="login_pw" name = "login_pw" placeholder ="비밀번호" /><br/>
     			<input type = "submit" value="로그인"/>
     			<a  href ="/joinform">Join us</a>
     		</form>
     	</div>
       <br/><br/>
+      <!-- 회원가입 폼 -->
     	<div id ="join_form">
     		<form id ="join" action ="/join" method ="post">
-    			<input type = "text" id ="id" name ="id" placeholder ="아이디"/><br/>
-    			<input type = "password" id  ="pw" name = "pw" placeholder ="비밀번호"/><br/>
-    			<input type = "password" paceholder ="비밀번호 확인"/><br/>
-    			<input type = "radio" name = "gender" value = "남자">남자
-          <input type = "radio" name = "gender" value = "여자">여자<br/>
+    			<input type = "text" id ="join_id" name="join_id" placeholder ="아이디"/><br/>
+    			<input type = "password" id="join_pw" name= "join_pw" placeholder ="비밀번호"/><br/>
+    			<input type = "password" id="join_pwd" name ="join_pwd" paceholder ="비밀번호 확인"/><br/>
+    			<input type = "radio" name= "gender" value = "man">남자
+          <input type = "radio" name= "gender" value = "female">여자<br/>
     			<input type = "number" id ="phone1" name ="phone1" />-
           <input type = "number" id ="phone2" name ="phone2" />-
           <input type = "number" id ="phone3" name ="phone3" /><br/>
