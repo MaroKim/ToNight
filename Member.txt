@@ -2,6 +2,6 @@
 김우빈   wbkim@nate.com         1234         남         1989/07/16            0
 지창욱   cwjee@naver.com        1234         남         1987/07/05            0
 윤시윤   yoon@naver.com         1234         남         1986/09/26            0
-이설    snow@af.com           bj123         여         1991/02/07            0
+이설     snow@af.com           bj123         여         1991/02/07            0
 양정원   jwyang@gmail.com      mtv33         여         1988/09/22            0
 박경리   klpark@nate.com       nine9         여         1990/07/05            0
