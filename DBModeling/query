@@ -24,3 +24,11 @@ insert into Member values('yoon@naver.com','1234','0',1986,09,26,0);
 insert into Member values('snow@af.com','bj123','1',1991,02,07,0);
 insert into Member values('jwyang@gmail.com','mtv33','1',1988,09,22,0);
 insert into Member values('klpark@nate.com','nine9','1',1990,07,05,0);
+
+--MemberImg
+insert into MemberImg values('wbkimg@nate.com','/image/memberImg','profile1','암호화된파일이름');
+insert into MemberImg values('cwjee@naver.com','/image/memberImg','profile2','암호화된파일이름');
+insert into MemberImg values('yoon@naver.com','/image/memberImg','profile3','암호화된파일이름');
+insert into MemberImg values('snow@af.com','/image/memberImg','profile4','암호화된파일이름');
+insert into MemberImg values('jwyang@gmail.com','/image/memberImg','profile5','암호화된파일이름');
+insert into MemberImg values('klpark@nate.com','/image/memberImg','profile6','암호화된파일이름');
