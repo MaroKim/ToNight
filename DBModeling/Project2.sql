@@ -1,5 +1,4 @@
--- CREATE DATABASE
-CREATE DATABASE `Project2` DEFAULT CHARACTER SET utf8;
+CREATE DATABASE	`Project2` DEFAULT CHARACTER SET utf8;
 
 -- Member
 CREATE TABLE `Project2`.`Member` (
@@ -128,10 +127,10 @@ ALTER TABLE `Project2`.`ClubProduct`
 -- ProductCode
 CREATE TABLE `Project2`.`ProductCode` (
 	`pc_pCode`    INT          NOT NULL, -- pc_code
-	`pc_name`     VARCHAR(20)  NOT NULL, -- pc_name
+	`pc_name`     VARCHAR(100) NOT NULL, -- pc_name
 	`p_num`       INT          NOT NULL, -- dp_num
-	`pc_imgName`  VARCHAR(100) NOT NULL, -- pc_imgName
-	`pc_saveName` CHAR(64)     NOT NULL  -- pc_saveName
+	`pc_imgName`  VARCHAR(150) NOT NULL, -- pc_imgName
+	`pc_saveName` VARCHAR(200) NOT NULL  -- pc_saveName
 );
 
 -- ProductCode
@@ -223,8 +222,8 @@ ALTER TABLE `Project2`.`MemberImg`
 CREATE TABLE `Project2`.`ClubImg` (
 	`c_num`       INT          NOT NULL, -- c_num
 	`p_num`       INT          NOT NULL, -- dp_num
-	`ci_imgName`  VARCHAR(100) NOT NULL, -- ci_imgName
-	`ci_savename` CHAR(64)     NOT NULL  -- ci_savename
+	`ci_imgName`  VARCHAR(150) NOT NULL, -- ci_imgName
+	`ci_savename` VARCHAR(200) NOT NULL  -- ci_savename
 );
 
 -- ClubImg
