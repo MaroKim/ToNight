@@ -1,4 +1,5 @@
-CREATE DATABASE	`Project2` DEFAULT CHARACTER SET utf8;
+-- CREATE DATABASE
+CREATE DATABASE `Project2` DEFAULT CHARACTER SET utf8;
 
 -- Member
 CREATE TABLE `Project2`.`Member` (
@@ -71,8 +72,8 @@ ALTER TABLE `Project2`.`Club`
 CREATE TABLE `Project2`.`Payment` (
 	`p_num`     INT         NOT NULL, -- p_num
 	`m_email`   VARCHAR(40) NOT NULL, -- m_email
+	`pc_code`   INT         NOT NULL, -- pc_code
 	`c_num`     INT         NOT NULL, -- c_num
-	`pc_pCode`  INT         NOT NULL, -- pc_code
 	`p_date`    DATETIME    NOT NULL, -- p_date
 	`p_dayName` VARCHAR(10) NOT NULL  -- p_dayName
 );
@@ -112,7 +113,7 @@ ALTER TABLE `Project2`.`ClubInfo`
 -- ClubProduct
 CREATE TABLE `Project2`.`ClubProduct` (
 	`c_num`    INT NOT NULL, -- c_num
-	`pc_pCode` INT NOT NULL, -- pc_code
+	`pc_code`  INT NOT NULL, -- pc_code
 	`cp_price` INT NOT NULL  -- cp_price
 );
 
@@ -120,16 +121,15 @@ CREATE TABLE `Project2`.`ClubProduct` (
 ALTER TABLE `Project2`.`ClubProduct`
 	ADD CONSTRAINT `PK_ClubProduct` -- ClubProduct 기본키
 		PRIMARY KEY (
-			`c_num`,    -- c_num
-			`pc_pCode`  -- pc_code
+			`c_num`,   -- c_num
+			`pc_code`  -- pc_code
 		);
 
 -- ProductCode
 CREATE TABLE `Project2`.`ProductCode` (
-	`pc_pCode`    INT          NOT NULL, -- pc_code
-	`pc_name`     VARCHAR(100) NOT NULL, -- pc_name
-	`p_num`       INT          NOT NULL, -- dp_num
-	`pc_imgName`  VARCHAR(150) NOT NULL, -- pc_imgName
+	`pc_code`     INT          NOT NULL, -- pc_code
+	`pc_name`     VARCHAR(150) NOT NULL, -- pc_name
+	`dp_num`      INT          NOT NULL, -- dp_num
 	`pc_saveName` VARCHAR(200) NOT NULL  -- pc_saveName
 );
 
@@ -137,11 +137,11 @@ CREATE TABLE `Project2`.`ProductCode` (
 ALTER TABLE `Project2`.`ProductCode`
 	ADD CONSTRAINT `PK_ProductCode` -- ProductCode 기본키
 		PRIMARY KEY (
-			`pc_pCode` -- pc_code
+			`pc_code` -- pc_code
 		);
 
 ALTER TABLE `Project2`.`ProductCode`
-	MODIFY COLUMN `pc_pCode` INT NOT NULL AUTO_INCREMENT;
+	MODIFY COLUMN `pc_code` INT NOT NULL AUTO_INCREMENT;
 
 -- MoneyCharge
 CREATE TABLE `Project2`.`MoneyCharge` (
@@ -191,22 +191,22 @@ ALTER TABLE `Project2`.`AdminHistory`
 		);
 
 -- DirectoryPath
-CREATE TABLE `Project2`.`Path` (
-	`p_num`     INT          NOT NULL, -- dp_num
-	`p_dirPath` VARCHAR(100) NOT NULL  -- dp_dirPath
+CREATE TABLE `Project2`.`DirectoryPath` (
+	`dp_num`     INT          NOT NULL, -- dp_num
+	`dp_dirPath` VARCHAR(100) NOT NULL  -- dp_dirPath
 );
 
 -- DirectoryPath
-ALTER TABLE `Project2`.`Path`
-	ADD CONSTRAINT `PK_Path` -- DirectoryPath 기본키
+ALTER TABLE `Project2`.`DirectoryPath`
+	ADD CONSTRAINT `PK_DirectoryPath` -- DirectoryPath 기본키
 		PRIMARY KEY (
-			`p_num` -- dp_num
+			`dp_num` -- dp_num
 		);
 
 -- MemberImg
 CREATE TABLE `Project2`.`MemberImg` (
 	`m_email`     VARCHAR(40)  NOT NULL, -- m_email
-	`p_num`       INT          NOT NULL, -- dp_num
+	`dp_num`      INT          NOT NULL, -- dp_num
 	`mi_imgName`  VARCHAR(100) NOT NULL, -- mi_imgName
 	`mi_saveName` CHAR(64)     NOT NULL  -- mi_saveName
 );
@@ -221,7 +221,7 @@ ALTER TABLE `Project2`.`MemberImg`
 -- ClubImg
 CREATE TABLE `Project2`.`ClubImg` (
 	`c_num`       INT          NOT NULL, -- c_num
-	`p_num`       INT          NOT NULL, -- dp_num
+	`dp_num`      INT          NOT NULL, -- dp_num
 	`ci_imgName`  VARCHAR(150) NOT NULL, -- ci_imgName
 	`ci_savename` VARCHAR(200) NOT NULL  -- ci_savename
 );
@@ -300,12 +300,12 @@ ALTER TABLE `Project2`.`Payment`
 ALTER TABLE `Project2`.`Payment`
 	ADD CONSTRAINT `FK_ClubProduct_TO_Payment` -- ClubProduct -> Payment
 		FOREIGN KEY (
-			`c_num`,    -- c_num
-			`pc_pCode`  -- pc_code
+			`c_num`,   -- c_num
+			`pc_code`  -- pc_code
 		)
 		REFERENCES `Project2`.`ClubProduct` ( -- ClubProduct
-			`c_num`,    -- c_num
-			`pc_pCode`  -- pc_code
+			`c_num`,   -- c_num
+			`pc_code`  -- pc_code
 		);
 
 -- ClubInfo
@@ -320,32 +320,32 @@ ALTER TABLE `Project2`.`ClubInfo`
 
 -- ClubProduct
 ALTER TABLE `Project2`.`ClubProduct`
-	ADD CONSTRAINT `FK_ClubInfo_TO_ClubProduct` -- ClubInfo -> ClubProduct
+	ADD CONSTRAINT `FK_ProductCode_TO_ClubProduct` -- ProductCode -> ClubProduct
 		FOREIGN KEY (
-			`c_num` -- c_num
+			`pc_code` -- pc_code
 		)
-		REFERENCES `Project2`.`ClubInfo` ( -- ClubInfo
-			`c_num` -- c_num
+		REFERENCES `Project2`.`ProductCode` ( -- ProductCode
+			`pc_code` -- pc_code
 		);
 
 -- ClubProduct
 ALTER TABLE `Project2`.`ClubProduct`
-	ADD CONSTRAINT `FK_ProductCode_TO_ClubProduct` -- ProductCode -> ClubProduct
+	ADD CONSTRAINT `FK_Club_TO_ClubProduct` -- Club -> ClubProduct
 		FOREIGN KEY (
-			`pc_pCode` -- pc_code
+			`c_num` -- c_num
 		)
-		REFERENCES `Project2`.`ProductCode` ( -- ProductCode
-			`pc_pCode` -- pc_code
+		REFERENCES `Project2`.`Club` ( -- Club
+			`c_num` -- c_num
 		);
 
 -- ProductCode
 ALTER TABLE `Project2`.`ProductCode`
-	ADD CONSTRAINT `FK_Path_TO_ProductCode` -- DirectoryPath -> ProductCode
+	ADD CONSTRAINT `FK_DirectoryPath_TO_ProductCode` -- DirectoryPath -> ProductCode
 		FOREIGN KEY (
-			`p_num` -- dp_num
+			`dp_num` -- dp_num
 		)
-		REFERENCES `Project2`.`Path` ( -- DirectoryPath
-			`p_num` -- dp_num
+		REFERENCES `Project2`.`DirectoryPath` ( -- DirectoryPath
+			`dp_num` -- dp_num
 		);
 
 -- MoneyCharge
@@ -390,22 +390,22 @@ ALTER TABLE `Project2`.`MemberImg`
 
 -- MemberImg
 ALTER TABLE `Project2`.`MemberImg`
-	ADD CONSTRAINT `FK_Path_TO_MemberImg` -- DirectoryPath -> MemberImg
+	ADD CONSTRAINT `FK_DirectoryPath_TO_MemberImg` -- DirectoryPath -> MemberImg
 		FOREIGN KEY (
-			`p_num` -- dp_num
+			`dp_num` -- dp_num
 		)
-		REFERENCES `Project2`.`Path` ( -- DirectoryPath
-			`p_num` -- dp_num
+		REFERENCES `Project2`.`DirectoryPath` ( -- DirectoryPath
+			`dp_num` -- dp_num
 		);
 
 -- ClubImg
 ALTER TABLE `Project2`.`ClubImg`
-	ADD CONSTRAINT `FK_Path_TO_ClubImg` -- DirectoryPath -> ClubImg
+	ADD CONSTRAINT `FK_DirectoryPath_TO_ClubImg` -- DirectoryPath -> ClubImg
 		FOREIGN KEY (
-			`p_num` -- dp_num
+			`dp_num` -- dp_num
 		)
-		REFERENCES `Project2`.`Path` ( -- DirectoryPath
-			`p_num` -- dp_num
+		REFERENCES `Project2`.`DirectoryPath` ( -- DirectoryPath
+			`dp_num` -- dp_num
 		);
 
 -- ClubImg
