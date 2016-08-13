@@ -24,7 +24,8 @@
 
       <!-- 회원가입 폼 -->
     	<div id ="join_form">
-    		<form id ="join" name="/join"  method ="post" enctype="multipart/form-data">
+    		<!--<form id ="join" name="/join"  method ="post" enctype="multipart/form-data">-->
+    		<form id ="join" name="/join"  method ="post">
     			<input type = "text" id ="join_id" name="join_id" placeholder ="아이디"/><br/>
     			<input type = "password" id="join_pw" name= "join_pw" placeholder ="비밀번호"/><br/>
     			<input type = "password" id="join_pwd" name ="join_pwd" paceholder ="비밀번호 확인"/><br/>
@@ -34,7 +35,7 @@
           <input type = "number" id ="month" name ="month" />-
           <input type = "number" id ="day" name ="day" /><br/>
           <input type = "text" id="balance" name="balance" placeholder="balance"/></br>
-          <input type = "file" name="profileimg"/><br>
+          <!--<input type = "file" name="profileimg"/><br>-->
     			<input type ="submit" name ="joinall" value ="회원가입"/>
     			<a href ="/loginform" >Log in</a>
     		</form>
