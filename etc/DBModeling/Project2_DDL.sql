@@ -38,7 +38,8 @@ CREATE TABLE `Project2`.`History` (
 	`m_email`   VARCHAR(40) NOT NULL, -- m_email
 	`c_num`     INT         NOT NULL, -- c_num
 	`h_date`    DATETIME    NOT NULL, -- h_date
-	`h_dayName` VARCHAR(10) NOT NULL  -- h_dayName
+	`h_dayName` VARCHAR(10) NOT NULL, -- h_dayName
+	`h_status`  INT         NOT NULL  -- h_status
 );
 
 -- History
