@@ -4,7 +4,8 @@
   "description": "This is project folder",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,6 @@
     "morgan": "^1.7.0",
     "node-mysql": "^0.4.2",
     "serve-favicon": "^2.3.0"
-  }
+  },
+  "devDependencies": {}
 }
