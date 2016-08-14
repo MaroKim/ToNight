@@ -16,9 +16,9 @@ insert into District value(6,'Gwangju');
 
 -- DirectoryPath
 -- Assign the Image Path !!!!
-insert into DirectoryPath values(1,'/image/memberImg');
-insert into DirectoryPath values(2,'/image/clubImg');
-insert into DirectoryPath values(3,'/image/prodImg');
+insert into DirectoryPath values(1,'image/memberImg');
+insert into DirectoryPath values(2,'image/clubImg');
+insert into DirectoryPath values(3,'image/prodImg');
 
 -- CLUB
 insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(1, 3, 2, 'LUCIDREAM');
