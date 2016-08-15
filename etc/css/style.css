@@ -597,7 +597,7 @@ a.next{
 		padding-bottom:6em;
 	}
 	.big {
-		padding: 0px 10px 7.3em 10px !important;
+		padding: 0px 0px 0em 0px !important;
 	}
    a.back {
 		margin: 10px 0px 10px 52px;
@@ -641,7 +641,7 @@ a.next{
 /*--/seat selection--*/
 /*--big image--*/
 .big{
-	padding:0px 10px;
+	padding:0px auto;
 }
 .big a{
 	padding:10px;
@@ -1007,23 +1007,25 @@ color:#FFF !important;
 /*-- tabs-responsive --*/
 @media(max-width:768px){
 	.tabs-box{
-		width:95%;
+		width:100%;
 	}
   /**/
 
   .tabcontent {
-    display:none;
+    /*display:none;*/
+    display:inline-block;;
     padding:6px 12px;
     border:1px solid #cc;
     border-top:none;
   }
   ul.tab {
-    list-style-type: none outside none;
+    width:100%;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     text-align:center;
-    border: solid #ccc;
+    border: 0 solid #ccc;
     background-color: black;
     display:none-block;
 }
@@ -1037,6 +1039,7 @@ ul.tab li {
 /* Style the links inside the list items */
 ul.tab li a {
     display:block;
+    background: black;
     text-transform:uppercase;
     color: white;
     text-align: center;
@@ -1354,4 +1357,15 @@ ul.tab li a:focus, .active {
 		width: 91.5%;
 	}
 }
+.alcohol-list{
+  padding: 10px;
+  overflow: auto;
+}
+.alcohol-image{
+  width: 5em;
+  height: 5em;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
 /*--//main--*/
