@@ -21,12 +21,12 @@ insert into DirectoryPath values(2,'image/clubImg');
 insert into DirectoryPath values(3,'image/prodImg');
 
 -- CLUB
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(1, 3, 2, 'LUCIDREAM');
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(2, 3, 1, 'BONE');
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(3, 3, 1, 'MUTE');
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(4, 3, 1, 'MOVE');
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(5, 3, 2, 'OPIUM');
-insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(6, 3, 3, 'GLAM');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 2, 'LUCIDREAM');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 1, 'BONE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 1, 'MUTE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 1, 'MOVE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 2, 'OPIUM');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values(3, 3, 'GLAM');
 -- 성태가 이태원을 제외한 나머지 클럽 정보 쿼리문 작성 내역
 
 -- gangnam
@@ -65,9 +65,10 @@ insert into Club(d_districtCode, t_themeCode, c_clubName) values( 5, 1, 'BUTTON'
 
 insert into Club(d_districtCode, t_themeCode, c_clubName) values( 6, 1, 'LOGOS');
 
--- ClubImage
+-- ClubImg
 
 -- gangnam
+<<<<<<< HEAD
 insert into ClubImage(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
@@ -80,39 +81,56 @@ insert into ClubImage(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
+=======
+insert into ClubImg(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(10,2,'Y1975.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(11,2,'BASE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(12,2,'STUDIOJ.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(13,2,'ARENA.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(14,2,'DBRIDGE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
+>>>>>>> 1c6f67805e3cb2d0eafd22f619561dd4ddab6a92
 
 -- HongUniv
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'COCOON.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'LUX.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'MAMA.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'VERA.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'INSSUM.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'MADHOLIC.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'M2.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(19,2,'COCOON.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(20,2,'LUX.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(21,2,'MAMA.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(22,2,'VERA.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(23,2,'INSSUM.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(24,2,'MADHOLIC.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(25,2,'M2.png');
 
 -- Itaewon
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'LUCIDREAM.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'BONE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'MUTE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'MOVE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'OPIUM.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(3,2,'GLAM.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(1,2,'LUCIDREAM.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(2,2,'BONE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(3,2,'MUTE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(4,2,'MOVE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(5,2,'OPIUM.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(6,2,'GLAM.png');
 
 --  Pusan
-insert into ClubImage(c_num,dp_num,ci_imgName) values(4,2,'GRID.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(4,2,'ABYSS.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(4,2,'KUDETA.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(4,2,'247.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(26,2,'GRID.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(27,2,'ABYSS.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(28,2,'KUDETA.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(29,2,'247.png');
 
 -- Incheon
-insert into ClubImage(c_num,dp_num,ci_imgName) values(5,2,'BUTTON.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(30,2,'BUTTON.png');
 
 -- Gwangju
-insert into ClubImage(c_num,dp_num,ci_imgName) values(6,2,'LOGOS.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(31,2,'LOGOS.png');
 
 
 -- ClubInfo 나중에
+<<<<<<< HEAD
 -- insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(1,);
+=======
+>>>>>>> 1c6f67805e3cb2d0eafd22f619561dd4ddab6a92
 
 -- Member
 insert into Member values('wbkim@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1989,07,16,0); -- pw 1234

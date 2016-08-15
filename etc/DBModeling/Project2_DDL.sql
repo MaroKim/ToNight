@@ -1,3 +1,6 @@
+-- CREATE DATABASE
+CREATE DATABASE `Project2` DEFAULT CHARACTER SET utf8;
+
 -- Member
 CREATE TABLE `Project2`.`Member` (
 	`m_email`   VARCHAR(40) NOT NULL, -- m_email
@@ -65,6 +68,9 @@ ALTER TABLE `Project2`.`Club`
 		PRIMARY KEY (
 			`c_num` -- c_num
 		);
+
+ALTER TABLE `Project2`.`Club`
+	MODIFY COLUMN `c_num` INT NOT NULL AUTO_INCREMENT;
 
 -- Payment
 CREATE TABLE `Project2`.`Payment` (
