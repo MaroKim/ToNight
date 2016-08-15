@@ -68,18 +68,18 @@ insert into Club(d_districtCode, t_themeCode, c_clubName) values( 6, 1, 'LOGOS')
 -- ClubImage
 
 -- gangnam
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'BUGATTI.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'PALACE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'ANSWER.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'Y1975.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'BASE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'STUDIOJ.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'ARENA.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'DBRIDGE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'BOUND.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'OCTAGON.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'KUANXI.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(1,2,'MASS.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(10,2,'Y1975.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(11,2,'BASE.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(12,2,'STUDIOJ.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(13,2,'ARENA.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(14,2,'DBRIDGE.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
+insert into ClubImage(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
 
 -- HongUniv
 insert into ClubImage(c_num,dp_num,ci_imgName) values(2,2,'COCOON.png');
@@ -112,7 +112,7 @@ insert into ClubImage(c_num,dp_num,ci_imgName) values(6,2,'LOGOS.png');
 
 
 -- ClubInfo 나중에
-insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values();
+-- insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(1,);
 
 -- Member
 insert into Member values('wbkim@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1989,07,16,0); -- pw 1234
