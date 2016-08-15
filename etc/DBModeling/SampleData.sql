@@ -27,6 +27,44 @@ insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(3, 3, 1,
 insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(4, 3, 1, 'MOVE');
 insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(5, 3, 2, 'OPIUM');
 insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(6, 3, 3, 'GLAM');
+-- 성태가 이태원을 제외한 나머지 클럽 정보 쿼리문 작성 내역
+
+-- gangnam
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'BUGATTI');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'PALACE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'ANSWER');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 3, 'Y1975');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'BASE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 3, 'STUDIOJ');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'ARENA');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 3, 'DBRIDGE');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'BOUND');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'OCTAGON');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 3, 'KUANXI');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 1, 1, 'MASS');
+
+-- HongUniv
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 1, 'COCOON');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 2, 'LUX');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 1, 'MAMA');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 1, 'VERA');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 1, 'INSSUM');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 2, 'MADHOLIC');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 2, 1, 'M2');
+
+-- Pusan
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 4, 1, 'GRID');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 4, 1, 'ABYSS');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 4, 1, 'KUDETA');
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 4, 1, '247');
+
+-- Incheon
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 5, 1, 'BUTTON');
+
+-- Gwangju
+
+insert into Club(d_districtCode, t_themeCode, c_clubName) values( 6, 1, 'LOGOS');      
+
 
 
 -- Member
@@ -559,5 +597,3 @@ INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 129, 250000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 102, 420000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 100, 480000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 114, 480000);
-
-
