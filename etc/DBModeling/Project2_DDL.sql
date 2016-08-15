@@ -1,6 +1,3 @@
--- CREATE DATABASE
-CREATE DATABASE `Project2` DEFAULT CHARACTER SET utf8;
-
 -- Member
 CREATE TABLE `Project2`.`Member` (
 	`m_email`   VARCHAR(40) NOT NULL, -- m_email
@@ -220,10 +217,9 @@ ALTER TABLE `Project2`.`MemberImg`
 
 -- ClubImg
 CREATE TABLE `Project2`.`ClubImg` (
-	`c_num`       INT          NOT NULL, -- c_num
-	`dp_num`      INT          NOT NULL, -- dp_num
-	`ci_imgName`  VARCHAR(150) NOT NULL, -- ci_imgName
-	`ci_savename` VARCHAR(200) NOT NULL  -- ci_savename
+	`c_num`      INT          NOT NULL, -- c_num
+	`dp_num`     INT          NOT NULL, -- dp_num
+	`ci_imgName` VARCHAR(150) NOT NULL  -- ci_imgName
 );
 
 -- ClubImg
