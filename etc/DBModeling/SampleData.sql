@@ -68,7 +68,6 @@ insert into Club(d_districtCode, t_themeCode, c_clubName) values( 6, 1, 'LOGOS')
 -- ClubImg
 
 -- gangnam
-<<<<<<< HEAD
 insert into ClubImage(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
@@ -81,20 +80,6 @@ insert into ClubImage(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
 insert into ClubImage(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
-=======
-insert into ClubImg(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(10,2,'Y1975.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(11,2,'BASE.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(12,2,'STUDIOJ.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(13,2,'ARENA.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(14,2,'DBRIDGE.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
-insert into ClubImg(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
->>>>>>> 1c6f67805e3cb2d0eafd22f619561dd4ddab6a92
 
 -- HongUniv
 insert into ClubImg(c_num,dp_num,ci_imgName) values(19,2,'COCOON.png');
