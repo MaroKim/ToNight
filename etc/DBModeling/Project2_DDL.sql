@@ -206,10 +206,9 @@ ALTER TABLE `Project2`.`DirectoryPath`
 
 -- MemberImg
 CREATE TABLE `Project2`.`MemberImg` (
-	`m_email`     VARCHAR(40)  NOT NULL, -- m_email
-	`dp_num`      INT          NOT NULL, -- dp_num
-	`mi_imgName`  VARCHAR(100) NOT NULL, -- mi_imgName
-	`mi_saveName` CHAR(64)     NOT NULL  -- mi_saveName
+	`m_email`    VARCHAR(40)  NOT NULL, -- m_email
+	`dp_num`     INT          NOT NULL, -- dp_num
+	`mi_imgName` VARCHAR(200) NOT NULL  -- mi_imgName
 );
 
 -- MemberImg

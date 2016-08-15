@@ -16,9 +16,9 @@ insert into District value(6,'Gwangju');
 
 -- DirectoryPath
 -- Assign the Image Path !!!!
-insert into DirectoryPath values(1,'/image/memberImg');
-insert into DirectoryPath values(2,'/image/clubImg');
-insert into DirectoryPath values(3,'/image/prodImg');
+insert into DirectoryPath values(1,'image/memberImg');
+insert into DirectoryPath values(2,'image/clubImg');
+insert into DirectoryPath values(3,'image/prodImg');
 
 -- CLUB
 insert into Club(c_num, d_districtCode, t_themeCode, c_clubName) values(1, 3, 2, 'LUCIDREAM');
@@ -76,12 +76,12 @@ insert into Member values('jwyang@gmail.com','ec375fab79cdeb8ddfa5bb1d501fabb4f5
 insert into Member values('klpark@nate.com','ed7a4973b9b04dad1d81d2f8c2b6a3e5fe2a959e5f07ca733f47545a5afa718a','1',1990,07,05,0); -- pw nine9
 
 -- MemberImg
-insert into MemberImg values('wbkim@nate.com',1,'profile1','20f549a4ec125f506125234f5d1de5d61c7a5b5bd5fe27389296d42a15c50b10');
-insert into MemberImg values('cwjee@naver.com',1,'profile2','a92d9ebad6b4ab6a7e829b4be72e5f5932ed7c44e5c05b52de19b7846a36e907');
-insert into MemberImg values('yoon@naver.com',1,'profile3','2a044a294f0074f3056be529a14533294aefbd6210792843464fdf73bb7529c8');
-insert into MemberImg values('snow@af.com',1,'profile4','31785ac9c0407584bc2ba0f97f6a193787835e27bbe5c76579d954b327db9307');
-insert into MemberImg values('jwyang@gmail.com',1,'profile5','1b9139f36019a9aa6d37aae393edc47a541fa3d2390a297e3d4e9b8d94eafe14');
-insert into MemberImg values('klpark@nate.com',1,'profile6','80edab72ef29cb63aef6a67ade7a5fdd3be2b8eb112583e0663d665c90f2ead1');
+insert into MemberImg values('wbkim@nate.com',1,'default.png');
+insert into MemberImg values('cwjee@naver.com',1,'default.png');
+insert into MemberImg values('yoon@naver.com',1,'default.png');
+insert into MemberImg values('snow@af.com',1,'default.png');
+insert into MemberImg values('jwyang@gmail.com',1,'default.png');
+insert into MemberImg values('klpark@nate.com',1,'default.png');
 
 
 -- ProductCode Query
