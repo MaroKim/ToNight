@@ -187,7 +187,41 @@ insert into MemberImg values('snow@af.com',1,'default.png');
 insert into MemberImg values('jwyang@gmail.com',1,'default.png');
 insert into MemberImg values('klpark@nate.com',1,'default.png');
 
+-- History,Payment 모두 20명이라는 멤버가 하나의 클럽에서 일어나는 상황 연출 ( bugatti)
+-- History
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('wbkim@nate.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jwyang@gmail.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('cwjee@naver.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('yoon@naver.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('snow@af.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('klpark@nate.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('test@test.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('hong@naver.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jyp@sm.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('kim@nate.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jin@naver.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('Lee@gmail.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('god@yahoo.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('sha@good.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('sss@naver.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('hee@nate.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('kst@gmail.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('eggcho@bye.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('silver@test.com',7,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('gm@naver.com',7,'2016-08-16','tuesday',1);
 
+
+-- Payment
+
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('wbkim@nate.com',1,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('jyp@sm.com',1,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('cwjee@naver.com',9,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('snow@af.com',8,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('kst@gmail.com',8,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('klpark@nate.com',8,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('gm@naver.com',8,7,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('hong@naver.com',3,7,'2016-08-16','tuesday');
+  
 -- ProductCode Query
 INSERT INTO ProductCode(pc_name, dp_num, pc_saveName)VALUES('1800 ANEJO',3,'1800_ANEJO');
 INSERT INTO ProductCode(pc_name, dp_num, pc_saveName)VALUES('1800 REPOSADO',3,'1800_REPOSADO');
