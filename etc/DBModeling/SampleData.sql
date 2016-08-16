@@ -112,10 +112,8 @@ insert into ClubImg(c_num,dp_num,ci_imgName) values(31,2,'LOGOS.png');
 
 
 -- ClubInfo 나중에
-<<<<<<< HEAD
--- insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(1,);
-=======
->>>>>>> 1c6f67805e3cb2d0eafd22f619561dd4ddab6a92
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(1,'24:30','5:00',20000,01022612660);
+
 
 -- Member
 insert into Member values('wbkim@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1989,07,16,0); -- pw 1234
