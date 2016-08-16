@@ -68,18 +68,18 @@ insert into Club(d_districtCode, t_themeCode, c_clubName) values( 6, 1, 'LOGOS')
 -- ClubImg
 
 -- gangnam
-insert into ClubImage(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(10,2,'Y1975.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(11,2,'BASE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(12,2,'STUDIOJ.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(13,2,'ARENA.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(14,2,'DBRIDGE.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
-insert into ClubImage(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(7,2,'BUGATTI.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(8,2,'PALACE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(9,2,'ANSWER.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(10,2,'Y1975.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(11,2,'BASE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(12,2,'STUDIOJ.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(13,2,'ARENA.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(14,2,'DBRIDGE.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(15,2,'BOUND.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(16,2,'OCTAGON.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(17,2,'KUANXI.png');
+insert into ClubImg(c_num,dp_num,ci_imgName) values(18,2,'MASS.png');
 
 -- HongUniv
 insert into ClubImg(c_num,dp_num,ci_imgName) values(19,2,'COCOON.png');
@@ -221,7 +221,7 @@ insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('kst@gmail.co
 insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('klpark@nate.com',8,7,'2016-08-16','tuesday');
 insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('gm@naver.com',8,7,'2016-08-16','tuesday');
 insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('hong@naver.com',3,7,'2016-08-16','tuesday');
-  
+
 -- ProductCode Query
 INSERT INTO ProductCode(pc_name, dp_num, pc_saveName)VALUES('1800 ANEJO',3,'1800_ANEJO');
 INSERT INTO ProductCode(pc_name, dp_num, pc_saveName)VALUES('1800 REPOSADO',3,'1800_REPOSADO');
