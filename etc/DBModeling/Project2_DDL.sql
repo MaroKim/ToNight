@@ -98,7 +98,7 @@ CREATE TABLE `Project2`.`ClubInfo` (
 	`ci_startTime` TIME          NOT NULL, -- ci_startTime
 	`ci_endTime`   TIME          NOT NULL, -- ci_endTime
 	`ci_price`     INT           NOT NULL, -- ci_price
-	`ci_phone`     INT           NOT NULL, -- ci_phone
+	`ci_phone`     VARCHAR(15)   NOT NULL, -- ci_phone
 	`ci_infoDJ`    VARCHAR(60)   NULL,     -- ci_infoDJ
 	`ci_guest`     VARCHAR(60)   NULL,     -- ci_guest
 	`ci_event`     VARCHAR(5000) NULL      -- ci_event
@@ -110,9 +110,6 @@ ALTER TABLE `Project2`.`ClubInfo`
 		PRIMARY KEY (
 			`c_num` -- c_num
 		);
-
-ALTER TABLE `Project2`.`ClubInfo`
-	MODIFY COLUMN `c_num` INT NOT NULL AUTO_INCREMENT;
 
 -- ClubProduct
 CREATE TABLE `Project2`.`ClubProduct` (
