@@ -111,15 +111,73 @@ insert into ClubImg(c_num,dp_num,ci_imgName) values(30,2,'BUTTON.png');
 insert into ClubImg(c_num,dp_num,ci_imgName) values(31,2,'LOGOS.png');
 
 
--- ClubInfo 나중에
+-- ClubInfo
+-- Itaewon
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(1,'22:00','05:00',20000,'010-2261-2660');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(2,'22:00','05:30',20000,'02-749-6164');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(3,'22:00','05:00',10000,'010-5470-0302');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(4,'22:00','07:00',10000,'010-5067-4050');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(5,'21:30','06:00',10000,'010-2756-0851');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(6,'19:00','05:00',0,'02-796-6853');
 
--- Member
+-- gangnam
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(7,'22:30','10:00',30000,'010-9102-0985');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(8,'22:00','09:00',30000,'010-9588-8247');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(9,'22:00','06:00',30000,'02-514-4311');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(10,'19:00','05:00',20000,'02-540-0197');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(11,'22:00','07:00',30000,'010-2833-6732');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(12,'19:00','05:00',30000,'02-540-6799');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(13,'23:00','12:00',20000,'010-9484-3622');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(14,'20:00','04:00',0,'010-6707-2168');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(15,'23:00','10:00',20000,'010-3655-0252');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(16,'22:00','07:00',30000,'02-516-8847');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(17,'20:00','06:00',0,'010-4848-9994');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(18,'22:00','10:00',20000,'02-6447-0042');
+
+-- HongUniv
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(19,'21:00','07:00',20000,'010-5054-6068');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(20,'22:00','06:00',10000,'010-4499-2008');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(21,'21:00','05:00',15000,'010-9920-8165');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(22,'21:00','07:00',10000,'010-9154-1630');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(23,'21:00','07:00',15000,'010-6877-8300');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(24,'22:00','09:00',15000,'010-4177-3308');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(25,'22:00','08:00',20000,'010-2707-7573');
+
+-- Pusan
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(26,'22:00','06:00',20000,'1588-7383');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(27,'22:00','06:00',20000,'1877-5337');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(28,'23:00','07:00',20000,'01899-5605');
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(29,'23:00','06:00',20000,'051-703-6545');
+
+-- Incheon
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(30,'22:00','07:00',15000,'032-435-8090');
+
+-- Gwangju
+insert into ClubInfo(c_num,ci_startTime,ci_endTime,ci_price,ci_phone) values(31,'22:00','07:00',20000,'010-3100-5888');
+
+
+-- Member 20대 : 1988 ~ 1997 , 30대 : 1978 ~ 1987
 insert into Member values('wbkim@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1989,07,16,0); -- pw 1234
 insert into Member values('cwjee@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1987,07,05,0); -- pw 1234
 insert into Member values('yoon@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1986,09,26,0); -- pw 1234
 insert into Member values('snow@af.com','3a535e32103fa25aca8bb8f895a6a4166a8c8dcf00e99863204a7462f005f436','1',1991,02,07,0); -- pw bj123
 insert into Member values('jwyang@gmail.com','ec375fab79cdeb8ddfa5bb1d501fabb4f55fc2101920387d18bc93b58d224897','1',1988,09,22,0); -- pw mtv33
 insert into Member values('klpark@nate.com','ed7a4973b9b04dad1d81d2f8c2b6a3e5fe2a959e5f07ca733f47545a5afa718a','1',1990,07,05,0); -- pw nine9
+-- additional data
+insert into Member values('test@test.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1987,05,12,0); -- pw 1234
+insert into Member values('hong@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1979,02,12,0); -- pw 1234
+insert into Member values('jyp@sm.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1985,07,04,0); -- pw 1234
+insert into Member values('kim@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1997,01,03,0); -- pw 1234
+insert into Member values('jin@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1992,12,01,0); -- pw 1234
+insert into Member values('Lee@gmail.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1994,09,27,0); -- pw 1234
+insert into Member values('god@yahoo.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','0',1993,03,01,0); -- pw 1234
+insert into Member values('sha@good.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1989,01,03,0); -- pw 1234
+insert into Member values('sss@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1986,12,24,0); -- pw 1234
+insert into Member values('hee@nate.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1985,09,09,0); -- pw 1234
+insert into Member values('kst@gmail.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1987,04,02,0); -- pw 1234
+insert into Member values('eggcho@bye.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1997,03,01,0); -- pw 1234
+insert into Member values('silver@test.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1995,07,03,0); -- pw 1234
+insert into Member values('gm@naver.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','1',1980,01,07,0); -- pw 1234
 
 -- MemberImg
 insert into MemberImg values('wbkim@nate.com',1,'default.png');
@@ -128,6 +186,31 @@ insert into MemberImg values('yoon@naver.com',1,'default.png');
 insert into MemberImg values('snow@af.com',1,'default.png');
 insert into MemberImg values('jwyang@gmail.com',1,'default.png');
 insert into MemberImg values('klpark@nate.com',1,'default.png');
+
+-- History,Payment 모두 20명이라는 멤버가 하나의 클럽에서 일어나는 상황 연출 ( LUCIDREAM)
+-- History
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('wbkim@nate.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jwyang@gmail.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('cwjee@naver.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('yoon@naver.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('snow@af.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('klpark@nate.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('test@test.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('hong@naver.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jyp@sm.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('kim@nate.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('jin@naver.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('Lee@gmail.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('god@yahoo.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('sha@good.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('sss@naver.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('hee@nate.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('kst@gmail.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('eggcho@bye.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('silver@test.com',1,'2016-08-16','tuesday',1);
+insert into History(m_email,c_num,h_date,h_dayName,h_status) values('gm@naver.com',1,'2016-08-16','tuesday',1);
+
+
 
 
 -- ProductCode Query
@@ -643,3 +726,14 @@ INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 129, 250000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 102, 420000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 100, 480000);
 INSERT INTO ClubProduct(c_num, pc_code, cp_price)VALUES(3, 114, 480000);
+
+-- Payment
+
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('wbkim@nate.com',20,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('jyp@sm.com',21,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('cwjee@naver.com',100,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('snow@af.com',100,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('kst@gmail.com',100,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('klpark@nate.com',100,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('gm@naver.com',100,1,'2016-08-16','tuesday');
+insert into Payment(m_email,pc_code,c_num,p_date,p_dayName) values('hong@naver.com',73,1,'2016-08-16','tuesday');
